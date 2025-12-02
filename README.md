@@ -72,3 +72,17 @@ This repository includes all files required for Phase 2 of the project, along wi
 - scikit-learn
 - statsmodels
 - Jupyter Notebook
+
+## Streamlit Dashboard
+
+A simple Streamlit app (`app/app.py`) loads the processed dataset, trains a RandomForest model with lag features, and displays:
+
+- MAE and MAPE for the test period
+- Actual vs predicted 6:00 AM demand
+- Feature importance chart
+
+To run:
+
+```bash
+cd app
+streamlit run app.py
